@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* flex-col flex justify-center bg-blue-400/50 absolute top-0 left-0 w-full h-screen backdrop-blur-sm z-20 */
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2564eb83;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  z-index: 20;
+}
+.open {
+  animation: openEff 2s ease-in-out forwards;
+}
+
+.closed {
+  position: absolute;
+  left: 0;
+
+  animation: closeEff 2s ease-in-out forwards;
+}
+
+@keyframes closeEff {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes openEff {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
