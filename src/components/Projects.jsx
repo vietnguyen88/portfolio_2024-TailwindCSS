@@ -1,16 +1,16 @@
 const projects = [
   {
-    name: 'Games',
-    des: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text  ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book.",
-    img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    link_code: 'abc',
-    link_demo: 'abc',
+    name: 'Todo-App',
+    des: "Welcome to our new and intuitive Todo App, where productivity meets seamless design! Our Todo App leverages the power of Evergreen UI for a clean and elegant user interface, paired with Firebase Firestore as the backend database, ensuring a robust and scalable solution for all your task management needs.",
+    img: 'https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Screenshot%202024-03-21%20215232.png?alt=media&token=a73aa7ff-7cbf-4f05-a83b-b8c61332d991',
+    link_code: 'https://github.com/vietnguyen88/Todo-App-EvergreenUI-Firebase-Firestore-',
+    link_demo: 'https://todo-app-evergreen-ui-firebase-firestore.vercel.app/',
   },
   {
-    name: 'Cosmetics',
-    des: " Lorem Ipsum has been the industry's standard dummy text  ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book.",
-    img: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    link_code: 'abc',
+    name: 'Weather-App',
+    des: "Weather-App is a sleek and intuitive weather application built using Next.js, Weather API, and Tailwind CSS, designed to provide accurate and up-to-date weather information at your fingertips. With its user-friendly interface, Weather-App allows users to effortlessly search for and display local time, current weather conditions, and a five-hour weather forecast based on the time of query.",
+    img: 'https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Screenshot%202024-03-21%20233548.png?alt=media&token=63c141d3-3186-45b0-998e-bae0d05e4d98',
+    link_code: 'https://github.com/vietnguyen88/weather-app',
     link_demo: 'abc',
   },
   {
