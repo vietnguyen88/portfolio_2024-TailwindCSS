@@ -2,23 +2,23 @@ const projects = [
   {
     name: 'Todo-App',
     des: "Welcome to our new and intuitive Todo App, where productivity meets seamless design! Our Todo App leverages the power of Evergreen UI for a clean and elegant user interface, paired with Firebase Firestore as the backend database, ensuring a robust and scalable solution for all your task management needs.",
-    img: 'https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Screenshot%202024-03-21%20215232.png?alt=media&token=a73aa7ff-7cbf-4f05-a83b-b8c61332d991',
+    img: 'https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Screenshot_2024-03-21_215232-removebg-preview%20(2).png?alt=media&token=05ebb9ae-f7f2-492a-b770-823384a2868f',
     link_code: 'https://github.com/vietnguyen88/Todo-App-EvergreenUI-Firebase-Firestore-',
     link_demo: 'https://todo-app-evergreen-ui-firebase-firestore.vercel.app/',
   },
   {
     name: 'Weather-App',
     des: "Weather-App is a sleek and intuitive weather application built using Next.js, Weather API, and Tailwind CSS, designed to provide accurate and up-to-date weather information at your fingertips. With its user-friendly interface, Weather-App allows users to effortlessly search for and display local time, current weather conditions, and a five-hour weather forecast based on the time of query.",
-    img: 'https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Screenshot%202024-03-21%20233548.png?alt=media&token=63c141d3-3186-45b0-998e-bae0d05e4d98',
+    img: 'https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Untitled%20design.png?alt=media&token=7ffbd0ab-c441-4281-9cc7-97ae6e08a7f6',
     link_code: 'https://github.com/vietnguyen88/weather-app',
-    link_demo: 'abc',
+    link_demo: 'https://weather-app-orcin-seven-24.vercel.app/',
   },
   {
-    name: 'Shop',
-    des: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    img: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    link_code: 'abc',
-    link_demo: 'abc',
+    name: 'Ecommerce-Shop',
+    des: 'Coming Soon',
+    img: 'https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    link_code: '/',
+    link_demo: '/',
   },
 ];
 
@@ -85,7 +85,7 @@ const Projects = () => {
             </div>
             <div className="rounded-full mt-2 sm:mt-0 sm:w-60 sm:h-60 h-60 ">
               <img
-                className="w-full h-full rounded-lg object-cover"
+                className="w-full h-full rounded-lg object-contain"
                 src={project.img}
                 alt=""
               />
