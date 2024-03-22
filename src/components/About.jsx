@@ -7,7 +7,7 @@ const About = () => {
       <h1 className="text-blue-500 animate-[bounce_2s_infinite] text-lg font-playfair text-xl mb-5 ">
         About Me
       </h1>
-      <div className=" sm:flex sm:justify-center">
+      <div className=" sm:flex sm:justify-evenly">
         <p className="text-base text-slate-600 font-medium leading-6 font-robo sm:w-2/4">
           My journey in web development began with a fascination for creating
           visually appealing and interactive websites. As a React enthusiast,

@@ -37,7 +37,7 @@ const Projects = () => {
         </p>
         {projects.map((project, index) => (
           <div
-            className={`relative sm:flex sm:gap-10 mb-10 sm:jusfity-evenly ${
+            className={`relative sm:flex sm:gap-10 mb-10 sm:jusfity-evenly sm:items-center ${
               index % 2 !== 1 ? 'sm:flex-row-reverse' : ''
             }  shadow-lg p-5 rounded-lg bg-slate-100`}
           >
@@ -83,7 +83,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="rounded-full mt-2 sm:mt-0 sm:w-60 sm:h-60 h-60 ">
+            <div className="rounded-full mt-2 sm:mt-0  sm:h-60 h-60 ">
               <img
                 className="w-full h-full rounded-lg object-contain"
                 src={project.img}
