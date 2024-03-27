@@ -1,4 +1,35 @@
+import React, { useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+
+  const Service_id = 'service_phywr1v';
+  const Template_id = 'template_iet3z0m';
+  useEffect(() => {
+    emailjs.init('Lf2KjedN26Ha5tBv9');
+  }, []);
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.target);
+
+    emailjs
+      .send(Service_id, Template_id, {
+        from_name: form.get('name'),
+        from_email: form.get('email'),
+        message: form.get('message'),
+      })
+      .then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Email sent successfully!!!')
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
+    console.log('submit running');
+  };
   return (
     <div
       id="contact"
@@ -7,7 +38,7 @@ const Contact = () => {
       <h1 className="text-blue-500 animate-[bounce_2s_infinite] text-lg font-playfair text-xl mb-5 ">
         Contact Me
       </h1>
-      <div className="text-center">
+      <form id="contact-form" onSubmit={handleOnSubmit} className="">
         <div>
           <label htmlFor="email" className="">
             {/* EMAIL ICON */}
@@ -30,24 +61,55 @@ const Contact = () => {
             type="email"
             placeholder="example@email.com"
             id="email"
+            name='email'
             className="border-2 font-playfair rounded-xl placeholder:text-xs p-2 text-xs "
           />
           {/* ARROW ICON - SEND BTN */}
+          <button type='submit'>
+
           <svg
+            // data-tooltip-target="tooltip-default"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
             className="w-6 h-6 inline ml-2 cursor-pointer"
-          >
+            >
+
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            />
+              />
           </svg>
+              </button>
+
+
         </div>
+        <div className="mt-2">
+          <label htmlFor="name"><svg className="w-6 h6 inline mr-2" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><path d="M 27.9999 51.9063 C 41.0546 51.9063 51.9063 41.0781 51.9063 28 C 51.9063 14.9453 41.0312 4.0937 27.9765 4.0937 C 14.8983 4.0937 4.0937 14.9453 4.0937 28 C 4.0937 41.0781 14.9218 51.9063 27.9999 51.9063 Z M 27.9999 47.9219 C 16.9374 47.9219 8.1014 39.0625 8.1014 28 C 8.1014 16.9609 16.9140 8.0781 27.9765 8.0781 C 39.0155 8.0781 47.8983 16.9609 47.9219 28 C 47.9454 39.0625 39.0390 47.9219 27.9999 47.9219 Z M 27.9999 26.6875 C 31.3983 26.7109 34.1171 23.8047 34.1171 19.9844 C 34.1171 16.4219 31.3983 13.4453 27.9999 13.4453 C 24.6014 13.4453 21.8827 16.4219 21.8827 19.9844 C 21.8827 23.8047 24.6014 26.6641 27.9999 26.6875 Z M 17.0780 39.9766 L 38.8983 39.9766 C 39.8358 39.9766 40.3046 39.3437 40.3046 38.5 C 40.3046 35.8750 36.3671 29.1016 27.9999 29.1016 C 19.6327 29.1016 15.6952 35.8750 15.6952 38.5 C 15.6952 39.3437 16.1640 39.9766 17.0780 39.9766 Z"/></svg></label>
+          <input
+            type="text"
+            placeholder="John Doe"
+            id="name"
+            name='name'
+            className="border-2 font-playfair rounded-xl placeholder:text-xs p-2 text-xs "
+          />
+        </div>
+        <div className="mt-2">
+          <label htmlFor="message" className="align-top"><svg className="w-6 h6 inline mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 9H17M7 13H12M21 20L17.6757 18.3378C17.4237 18.2118 17.2977 18.1488 17.1656 18.1044C17.0484 18.065 16.9277 18.0365 16.8052 18.0193C16.6672 18 16.5263 18 16.2446 18H6.2C5.07989 18 4.51984 18 4.09202 17.782C3.71569 17.5903 3.40973 17.2843 3.21799 16.908C3 16.4802 3 15.9201 3 14.8V7.2C3 6.07989 3 5.51984 3.21799 5.09202C3.40973 4.71569 3.71569 4.40973 4.09202 4.21799C4.51984 4 5.0799 4 6.2 4H17.8C18.9201 4 19.4802 4 19.908 4.21799C20.2843 4.40973 20.5903 4.71569 20.782 5.09202C21 5.51984 21 6.0799 21 7.2V20Z" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+</svg></label>
+          <textarea
+            rows="4" cols="25"
+            placeholder="about..."
+            id="message"
+            name='message'
+            className="border-2 font-playfair rounded-xl placeholder:text-xs p-2 text-xs "
+          />
+        </div>
+        </form>
         <div className="flex justify-center gap-5 mt-5">
           {/* LINKEDIN LINK */}
           <a href="/">
@@ -96,7 +158,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-    </div>
+   
   );
 };
 export default Contact;

@@ -36,7 +36,7 @@ const Projects = () => {
           Each project is a chance to grow
         </p>
         {projects.map((project, index) => (
-          <div
+          <div key={project.name}
             className={`relative sm:flex sm:gap-10 mb-10 sm:jusfity-evenly sm:items-center ${
               index % 2 !== 1 ? 'sm:flex-row-reverse' : ''
             }  shadow-lg p-5 rounded-lg bg-slate-100`}
