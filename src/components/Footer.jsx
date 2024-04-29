@@ -1,4 +1,4 @@
-import { svgs } from './svg';
+// import { svgs } from './svg';
 const Footer = () => {
   return (
     <footer className="text-center bg-slate-300 w-full relative font-robo text-xs">

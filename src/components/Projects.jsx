@@ -1,24 +1,25 @@
 const projects = [
   {
-    name: 'Todo-App',
+    name: "Todo-App",
     des: "Welcome to our new and intuitive Todo App, where productivity meets seamless design! Our Todo App leverages the power of Evergreen UI for a clean and elegant user interface, paired with Firebase Firestore as the backend database, ensuring a robust and scalable solution for all your task management needs.",
-    img: 'https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Screenshot_2024-03-21_215232-removebg-preview%20(2).png?alt=media&token=05ebb9ae-f7f2-492a-b770-823384a2868f',
-    link_code: 'https://github.com/vietnguyen88/Todo-App-EvergreenUI-Firebase-Firestore-',
-    link_demo: 'https://todo-app-evergreen-ui-firebase-firestore.vercel.app/',
+    img: "https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Screenshot_2024-03-21_215232-removebg-preview%20(2).png?alt=media&token=05ebb9ae-f7f2-492a-b770-823384a2868f",
+    link_code:
+      "https://github.com/vietnguyen88/Todo-App-EvergreenUI-Firebase-Firestore-",
+    link_demo: "https://todo-app-evergreen-ui-firebase-firestore.vercel.app/",
   },
   {
-    name: 'Weather-App',
+    name: "Weather-App",
     des: "Weather-App is a sleek and intuitive weather application built using Next.js, Weather API, and Tailwind CSS, designed to provide accurate and up-to-date weather information at your fingertips. With its user-friendly interface, Weather-App allows users to effortlessly search for and display local time, current weather conditions, and a five-hour weather forecast based on the time of query.",
-    img: 'https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Untitled%20design.png?alt=media&token=7ffbd0ab-c441-4281-9cc7-97ae6e08a7f6',
-    link_code: 'https://github.com/vietnguyen88/weather-app',
-    link_demo: 'https://weather-app-orcin-seven-24.vercel.app/',
+    img: "https://firebasestorage.googleapis.com/v0/b/todo-app-2024.appspot.com/o/Untitled%20design.png?alt=media&token=7ffbd0ab-c441-4281-9cc7-97ae6e08a7f6",
+    link_code: "https://github.com/vietnguyen88/weather-app",
+    link_demo: "https://weather-app-orcin-seven-24.vercel.app/",
   },
   {
-    name: 'Ecommerce-Shop',
-    des: 'Coming Soon',
-    img: 'https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    link_code: '/',
-    link_demo: '/',
+    name: "Ecommerce-Shop",
+    des: "Coming Soon",
+    img: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link_code: "/",
+    link_demo: "/",
   },
 ];
 
@@ -26,7 +27,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="animate-spin font-bold my-20 px-10 sm:w-3/5 sm:px-0 mx-auto sm:flex sm:items-center "
+      className="animate-spin font-bold my-20 px-10 md:w-3/5 md:px-0 mx-auto md:flex md:items-center "
     >
       <div>
         <h1 className="text-blue-500 animate-[bounce_2s_infinite] font-playfair text-xl  ">
@@ -36,12 +37,13 @@ const Projects = () => {
           Each project is a chance to grow
         </p>
         {projects.map((project, index) => (
-          <div key={project.name}
-            className={`relative sm:flex sm:gap-10 mb-10 sm:jusfity-evenly sm:items-center ${
-              index % 2 !== 1 ? 'sm:flex-row-reverse' : ''
+          <div
+            key={project.name}
+            className={`relative md:flex md:gap-10 mb-10 md:jusfity-evenly md:items-center ${
+              index % 2 !== 1 ? "md:flex-row-reverse" : ""
             }  shadow-lg p-5 rounded-lg bg-slate-100`}
           >
-            <div className="sm:w-1/2">
+            <div className="md:w-1/2">
               <h1>{project.name}</h1>
               <p className="text-base text-slate-600 font-medium leading-6 font-robo">
                 {project.des}
@@ -83,7 +85,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="rounded-full mt-2 sm:mt-0  sm:h-60 h-60 ">
+            <div className="rounded-full mt-2 md:mt-0  md:h-60 h-60 ">
               <img
                 className="w-full h-full rounded-lg object-contain"
                 src={project.img}
@@ -93,7 +95,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="rounded-full mt-10 sm:mt-0"></div>
+      <div className="rounded-full mt-10 md:mt-0"></div>
     </div>
   );
 };

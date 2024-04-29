@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { animate, stagger } from 'motion';
+// import { animate, stagger } from 'motion';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -4,16 +4,16 @@ const About = () => {
       id="about"
       className="font-bold my-20 px-10 sm:w-3/5 sm:px-0 mx-auto  sm:justify-evenly sm:items-center gap-10"
     >
-      <h1 className="text-blue-500 animate-[bounce_2s_infinite] text-lg font-playfair text-xl mb-5 ">
+      <h1 className="text-blue-500 animate-[bounce_2s_infinite] font-playfair text-xl mb-5 ">
         About Me
       </h1>
-      <div className=" sm:flex sm:justify-evenly">
+      <div className=" sm:flex sm:justify-between">
         <p className="text-base text-slate-600 font-medium leading-6 font-robo sm:w-2/4">
           My journey in web development began with a fascination for creating
           visually appealing and interactive websites. As a React enthusiast,
-          I've delved deep into the React ecosystem, leveraging its powerful
-          features to build modern and scalable applications. I thrive on
-          turning design concepts into reality, ensuring that the user
+          I&apos;ve delved deep into the React ecosystem, leveraging its
+          powerful features to build modern and scalable applications. I thrive
+          on turning design concepts into reality, ensuring that the user
           experience is not just functional but delightful.
         </p>
         <div className="rounded-full mt-10 sm:mt-0 h-72 sm:w-72">
