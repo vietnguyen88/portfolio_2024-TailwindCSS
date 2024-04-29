@@ -21,6 +21,13 @@ const projects = [
     link_code: "/",
     link_demo: "/",
   },
+  {
+    name: "Recipe App",
+    des: "Coming Soon",
+    img: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link_code: "https://github.com/vietnguyen88/FoodRecipe",
+    link_demo: "https://food-recipe-tan.vercel.app/",
+  },
 ];
 
 const Projects = () => {
